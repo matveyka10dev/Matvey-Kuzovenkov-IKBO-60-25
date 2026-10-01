@@ -9,7 +9,7 @@ grep -o '^[^:]*' /etc/passwd | sort
 ## Задача 2
 
 ```bash
-grep -E '^[[:alnum:]_.-]+[[:space:]]+[0-9]+' /etc/protocols | awk '{print $2, $1}' | sort -nr | head -n 5
+grep -v '^#' /etc/protocols | awk 'NF {print $2, $1}' | sort -nr | head -n 5
 ```
 
 ## Задача 3
