@@ -276,7 +276,6 @@ target 2.0.0
 
 ```python
 import subprocess
-import sys
 
 
 def parse(v):
